@@ -1,0 +1,6 @@
+mkdir wheels
+pip freeze > requirements.txt
+pip wheel --wheel-dir=wheels -r requirements.txt
+pip install --no-index --find-links=wheels -r requirements.txt
+
+
